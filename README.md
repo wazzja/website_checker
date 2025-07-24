@@ -23,3 +23,5 @@ URL = "https://website.com"
 BOT_TOKEN = "5989402384:ASAJNdhDAKJn8Hnd898hHBDHdhdhd2ayoIH"
 CHAT_ID = "3914809149"
 ```
+### Logging
+Atm, I'm still experimenting with logging changes on the website. The idea behind this is to identify specific changes that I might want to ignore, so I don't receive unnecessary messages. The script creates a urllog.log file, which is updated every time changes occur
