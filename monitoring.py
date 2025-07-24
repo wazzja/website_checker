@@ -36,7 +36,7 @@ def monitor_website(url):
             continue
 
         if current_hash != last_hash:
-            # send_telegram_message(f"Website changed:\n{url}")
+            send_telegram_message(f"Website changed:\n{url}")
             print("Change detected!\n")
             log_change(check_for_changes(last_content, current_content))
             last_hash = current_hash
