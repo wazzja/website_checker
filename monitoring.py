@@ -42,7 +42,7 @@ def monitor_website(url):
             last_hash = current_hash
             last_content = current_content
         else:
-            print("No change detected.\n")
+            print(f"{current_hash}\n{last_hash}\nNo change detected.\n")
 
 if __name__ == "__main__":
     monitor_website(URL)
