@@ -1,6 +1,7 @@
 import time
 import random
 import datetime
+import requests
 from fetcher import get_hash
 from logger import log_change
 from diff import check_for_changes

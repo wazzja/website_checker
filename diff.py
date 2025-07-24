@@ -5,7 +5,7 @@ def check_for_changes(lc, cc):
     lc = lc.splitlines()
     cc = cc.splitlines()
 
-    differ = differlib.Differ()
+    differ = difflib.Differ()
     diff = differ.compare(lc, cc)
 
     changes = []
