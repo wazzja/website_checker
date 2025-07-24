@@ -18,10 +18,8 @@ There you can find the CHAT_ID under id:
 The web address to the particular page you want to be checked
 
 In the end your config.py should look something like this:
-  <html>
-    <head>
-      URL = "https://website.com"
-      BOT_TOKEN = "5989402384:ASAJNdhDAKJn8Hnd898hHBDHdhdhd2ayoIH"
-      CHAT_ID = "3914809149"
-    </head>
-  </html>
+```
+URL = "https://website.com"
+BOT_TOKEN = "5989402384:ASAJNdhDAKJn8Hnd898hHBDHdhdhd2ayoIH"
+CHAT_ID = "3914809149"
+```
