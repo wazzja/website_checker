@@ -1,8 +1,9 @@
 import difflib
 
 def check_for_changes(lc, cc):
-
+    lc = str(lc)
     lc = lc.splitlines()
+    cc = str(cc)
     cc = cc.splitlines()
 
     differ = difflib.Differ()
