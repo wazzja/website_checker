@@ -30,7 +30,7 @@ def monitor_website(url):
             logger.info(f"Initial fetch:\n\n{l_c}")
 
         while True:
-            wait_sec = random.randint(30, 90)
+            wait_sec = random.randint(180, 300)
             now = datetime.datetime.now()
 
             print(f"[{now:%Y-%m-%d %H:%M:%S}]\nWaiting {wait_sec} seconds before next check...\n")
