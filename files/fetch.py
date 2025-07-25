@@ -16,7 +16,7 @@ def fetch_url(url):
         driver.get(url)
         WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.TAG_NAME, WIDGET)))
         WebDriverWait(driver, 30).until_not(EC.presence_of_element_located((By.CLASS_NAME, "fa-spinner")))
-        target = driver.find_elements(By.TAG_NAME,"tws-experience-widget")
+        target = driver.find_elements(By.TAG_NAME, WIDGET)
         return [i.get_attribute("innerHTML") for i in target]
     finally:
         driver.quit()
