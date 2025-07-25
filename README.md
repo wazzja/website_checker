@@ -25,7 +25,7 @@ pip install setuptools  # required for undetected-chromedriver
 ## Config.py
 
 You'll need to write your own config.py file with your personal info in it.
-That includes the BOT_TOKEN, your own telegram CHAT_ID, an URL and the WIDGET you want to watch.
+That includes the BOT_TOKEN, your own telegram CHAT_ID, an URL, the SELECTOR and SELECTOR_TYPE you want to watch.
 
 ### BOT_TOKEN
 
@@ -43,20 +43,20 @@ Look for `"id"` in the JSON response to get your `CHAT_ID`.
 ### URL
 The web address to the particular page you want to be checked
 
-### WIDGET
-The name of the specific HTML widget or class you're monitoring.
+### SELECTOR & SELECTOR_TYPE
+The name of the specific HTML widget or class you're monitoring. Currently only works for TAGS and CLASS Typs.
 
 In the end your config.py should look something like this:
 ```python
 URL = "https://website.com"
 BOT_TOKEN = "5989402384:ASAJNdhDAKJn8Hnd898hHBDHdhdhd2ayoIH"
 CHAT_ID = "3914809149"
-WIDGET = "some-widget"
+SELECTOR = "some-widget"
+SELECTOR_TYPE = "CLASS"
 ```
 
 ## Run it
 
-I would recommend using tmux.
 ```bash
 python monitoring.py
 ```
