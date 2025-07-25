@@ -2,7 +2,7 @@ import time
 import random
 import datetime
 import requests
-from fetch import check_url
+from fetch import fetch_url
 from logger import logger, log_change
 from diff import check4changes
 from config import URL, BOT_TOKEN, CHAT_ID
@@ -21,7 +21,7 @@ def send_telegram_message(message):
 def monitor_website(url):
     try:
         print("Starting website monitor...")
-        l_c = check_url(url)
+        l_c = fetch_url(url)
 
         if not l_c:
             print("Initial fetch failed, exiting.")
@@ -36,7 +36,7 @@ def monitor_website(url):
             print(f"[{now:%Y-%m-%d %H:%M:%S}]\nWaiting {wait_sec} seconds before next check...\n")
             time.sleep(wait_sec)
 
-            c_c = check_url(url)
+            c_c = fetch_url(url)
             if not c_c:
                 continue
 

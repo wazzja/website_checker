@@ -1,11 +1,11 @@
 import logging
 
-logger = logging.getLogger("url_logger")
+logger = logging.getLogger("html_content")
 logger.setLevel(logging.INFO)
 
 logger.propagate = False
 
-file_handler = logging.FileHandler("urllog.log", mode="w")
+file_handler = logging.FileHandler("content.log", mode="w")
 file_handler.setLevel(logging.INFO)
 
 formatter = logging.Formatter('%(asctime)s\n\n%(message)s\n\n',
