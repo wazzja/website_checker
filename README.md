@@ -4,7 +4,7 @@ A small script that automatically checks for changes in a website's content and 
 The script relies primarily on Python 3 standard libraries, with the exception of:
 
 - [`requests`](https://pypi.org/project/requests/) – for sending Telegram messages
-- [selenium](https://pypi.org/project/selenium/) – for handling dynamically generated HTML using ChromeDriver  
+- [`selenium`](https://pypi.org/project/selenium/) – for handling dynamically generated HTML using ChromeDriver  
 ---
 
 ## Setup
