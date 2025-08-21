@@ -4,8 +4,7 @@ A small script that automatically checks for changes in a website's content and 
 The script relies primarily on Python 3 standard libraries, with the exception of:
 
 - [`requests`](https://pypi.org/project/requests/) – for sending Telegram messages
-- [`undetected-chromedriver`](https://pypi.org/project/undetected-chromedriver/) – for handling dynamically generated HTML using Selenium
-
+- [selenium](https://pypi.org/project/selenium/) – for handling dynamically generated HTML using ChromeDriver  
 ---
 
 ## Setup
@@ -16,8 +15,7 @@ Tested on Windows with WSL2 in a Python virtual environment.
 
 ```bash
 pip install requests
-pip install undetected-chromedriver
-pip install setuptools  # required for undetected-chromedriver
+pip install selenium
 ```
 
 ---
